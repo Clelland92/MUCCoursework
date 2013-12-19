@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+ 
+     <Button
+         android:id="@+id/normalMap"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Normal" />
+     
+     <Button
+         android:id="@+id/terrainMap"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/satelliteMap"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:layout_toRightOf="@+id/hybridMap"
+         android:text="Terrain" />
+
+     <Button
+         android:id="@+id/satelliteMap"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_toRightOf="@+id/normalMap"
+         android:text="Satellite" />
+
+     <Button
+         android:id="@+id/hybridMap"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/satelliteMap"
+         android:layout_alignParentTop="true"
+         android:layout_marginLeft="73dp"
+         android:text="Hybrid" />
+ 
+</RelativeLayout>

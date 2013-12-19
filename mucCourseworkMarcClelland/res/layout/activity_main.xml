@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:id="@+id/view_flipper"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="6dip">
+            
+<RelativeLayout 
+    			android:id="@+id/map_main"
+   				android:layout_width="match_parent"
+   				android:layout_height="match_parent">
+        
+	<fragment 
+ 		android:id="@+id/map" 
+ 		android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+ 		android:name="com.google.android.gms.maps.MapFragment"/> 
+
+		<Button
+		    android:id="@+id/selectMap"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:layout_centerHorizontal="true"
+		    android:text="Select Map" />
+
+		<Button
+		    android:id="@+id/search"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentTop="true"
+		    android:text="Search" />
+
+		<Button
+		    android:id="@+id/hostCities"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/selectMap"
+		    android:layout_alignParentTop="true"
+		    android:text="Cities" /> 
+</RelativeLayout>
+
+<RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >  
+		
+    	<Button
+        android:id="@+id/glasgow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Glasgow"/>
+        
+        <Button
+        android:id="@+id/delhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dehli"
+        android:layout_toRightOf="@+id/glasgow"/>
+        
+        <Button
+        android:id="@+id/melbourne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Melbourne"
+        android:layout_below="@+id/glasgow"/>
+    
+    <Button
+        android:id="@+id/manchester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manchester"
+        android:layout_toRightOf="@+id/melbourne"
+        android:layout_below="@+id/delhi"/>
+    
+    <Button
+        android:id="@+id/kuala_lumpur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kuala Lumpur"
+        android:layout_below="@+id/melbourne"/>
+    
+    <Button
+        android:id="@+id/victoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Victoria"
+        android:layout_toRightOf="@+id/kuala_lumpur"
+        android:layout_below="@+id/manchester"/>
+    
+    <Button
+        android:id="@+id/aukland"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aukland"
+        android:layout_below="@+id/kuala_lumpur"/>
+    
+    <Button
+        android:id="@+id/edinburgh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edinburgh"
+        android:layout_toRightOf="@+id/aukland"
+        android:layout_below="@+id/victoria"/>
+    
+    <Button
+        android:id="@+id/brisbane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brisbane"
+        android:layout_below="@+id/aukland"/>
+    
+    <Button
+        android:id="@+id/edmonton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edmonton"
+        android:layout_below="@+id/brisbane"/>
+    
+    <Button 
+        android:id="@+id/christchurch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Christchurch"
+        android:layout_toRightOf="@+id/brisbane"
+        android:layout_below="@+id/edinburgh"/>
+        
+</RelativeLayout>
+</ViewFlipper>

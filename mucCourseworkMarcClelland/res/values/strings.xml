@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">mucCourseworkMarcClelland</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string-array name="hostCityList">
+        <item >Glasgow</item>
+        <item >Delhi</item>
+        <item >Melbourne</item>
+        <item >Manchester</item>
+    	<item >Kuala_Lumpur</item>
+    	<item >Victoria</item>
+    	<item >Aukland</item>
+    	<item >Edinburgh</item>
+    	<item >Brisbane</item>
+    	<item >Edmonton</item>
+    	<item >Christchurch</item>
+    </string-array>
+
+</resources>
